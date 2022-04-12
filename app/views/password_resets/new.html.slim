@@ -1,0 +1,16 @@
+- provide :title, t("Forgot password")
+
+.col-lg-6
+  .row
+    .col-md-9.col-md-offset-1
+      .panel.panel-default
+        .panel-heading
+          h2= t "password_reset.h1"
+        .panel-body
+          = form_for(:password_reset, url: password_resets_path) do |f|
+            fieldset
+              .form-group
+                = f.email_field :email, class: "form-control", placeholder: t("sessions.email")
+              = f.submit t("password_reset.btn_submit"), class: "btn btn-lg btn-success"
+.col-md-3.col-md-offset-1
+    img.d-block.img-fluid alt=("Logo Login") src="/assets/logo_login.jpg" /

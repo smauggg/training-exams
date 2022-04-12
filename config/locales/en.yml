@@ -60,3 +60,6 @@ en:
     google: "Sign in with Google"
   flash:
     invalid: "Invalid email/password combination"
+  password_reset:
+    btn_submit: "Send me reset password instructions"
+    h1: "Forgot your password?"
