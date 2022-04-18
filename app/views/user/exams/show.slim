@@ -18,7 +18,7 @@
                       input.radio-btn id="#{answer.content}" name="#{question.content}" type="radio" /
                       label for="#{answer.content}" = answer.content
                       br/
-      = link_to "Submit Exam", "#",  class: "btn btn-primary btn-finish-exam", type: "button", data: {id: "#{@exam.id}"}
+      = button_tag "Nop Bai", class: "btn btn-primary btn-finish-exam", type: "button", data: {id: "#{@exam.id}"}
   - else
     p
       = t(".login_name")
