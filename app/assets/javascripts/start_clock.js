@@ -65,8 +65,10 @@ $( document ).on("turbolinks:load" ,function ()
 
         if ( this.remainingSeconds === 0 )
         {
-          alert( 'Time Out' );
-          // location.reload();
+          $( document ).ready( function ()
+          {
+            $( ".btn-finish-exam" ).click();
+          } );
           this.stop();
         }
       }, 1000 );
